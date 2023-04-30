@@ -1,0 +1,117 @@
+input {
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  font-size: 16px;
+  width: 280px;
+  border-radius: 5px;
+}
+.register-page {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-color: rgba(27, 27, 27, 1);
+  background-image: url("https://i.ibb.co/C2Zxm9z/register-Photo.png");
+
+  .register-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 95%;
+    max-width: 600px;
+    height: 95%;
+    max-height: 600px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    border: 2px solid rgb(53, 53, 53);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: radial-gradient(
+        60.06% 39.86% at 50% 50%,
+        rgba(162, 12, 12, 0.57) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      #1b1b1b;
+
+    font-family: "Oswald", sans-serif;
+
+    p{
+      cursor:pointer;
+      padding-top:15px ;
+      text-align: center;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .register-box-container {
+      width: 95%;
+      height: 95%;
+      // border: 2px solid #808080;
+      position: relative;
+
+      h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        // padding: 25px 0px;
+        i {
+          margin-left: 10px;
+        }
+      }
+
+      form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+
+        div {
+          margin: 10px 0px;
+          label {
+            color: #fff;
+          }
+        }
+        .form-button {
+          cursor: pointer;
+          padding: 4px;
+          height: 50px;
+          font-size: 18px;
+          width: 100%;
+          border-radius: 15px;
+          background: linear-gradient(
+            93.55deg,
+            #a81e1e -5.38%,
+            rgba(168, 30, 30, 0.52) 104.23%
+          );
+        }
+
+        .form-button {
+          background: transparent;
+          border: 2px solid transparent;
+          text-align: center;
+          font-size: 22px;
+          border-radius: 15px;
+          padding: 10px 25px;
+          cursor: pointer;
+          background: linear-gradient(93.55deg, #A81E1E -5.38%, rgba(168, 30, 30, 0.52) 104.23%);
+          color: #fff;
+          box-shadow: 0 4px 0 darken(#A81E1E, 10%);
+          border: 1px solid darken(#A81E1E, 10%);
+          transition: all 0.20s ease-in-out;
+
+          &:active {
+            transform: translateY(2px);
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
